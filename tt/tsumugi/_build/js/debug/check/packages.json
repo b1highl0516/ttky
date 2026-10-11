@@ -1,0 +1,1856 @@
+{
+  "source_dir": "/home/user/tsumugi",
+  "name": "lumen/tsumugi",
+  "packages": [
+    {
+      "is-main": false,
+      "is-third-party": false,
+      "root-path": "/home/user/tsumugi/tsumugi",
+      "root": "lumen/tsumugi",
+      "rel": "",
+      "files": {},
+      "wbtest-files": {},
+      "test-files": {},
+      "mbt-md-files": {},
+      "deps": [
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "wbtest-deps": [
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "test-deps": [
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "artifact": "/home/user/tsumugi/_build/js/debug/check/tsumugi.mi",
+      "check-command": [
+        "check",
+        "-error-format",
+        "json",
+        "-o",
+        "/home/user/tsumugi/_build/js/debug/check/tsumugi.mi",
+        "-pkg",
+        "lumen/tsumugi",
+        "-pkg-type",
+        "library",
+        "-std-path",
+        "/home/user/.moon/lib/core/_build/js/release/bundle",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/prelude/prelude.mi:prelude",
+        "-pkg-sources",
+        "lumen/tsumugi:/home/user/tsumugi/tsumugi",
+        "-target",
+        "js",
+        "-workspace-path",
+        "/home/user/tsumugi/tsumugi",
+        "-all-pkgs",
+        "/home/user/tsumugi/_build/js/debug/check/all_pkgs.json"
+      ],
+      "wbtest-check-command": null,
+      "test-check-command": [
+        "check",
+        "-error-format",
+        "json",
+        "-include-doctests",
+        "-o",
+        "/home/user/tsumugi/_build/js/debug/check/tsumugi.blackbox_test.mi",
+        "-pkg",
+        "lumen/tsumugi_blackbox_test",
+        "-pkg-type",
+        "library",
+        "-std-path",
+        "/home/user/.moon/lib/core/_build/js/release/bundle",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/prelude/prelude.mi:prelude",
+        "-i",
+        "/home/user/tsumugi/_build/js/debug/check/tsumugi.mi:tsumugi",
+        "-pkg-sources",
+        "lumen/tsumugi_blackbox_test:/home/user/tsumugi/tsumugi",
+        "-target",
+        "js",
+        "-blackbox-test",
+        "-workspace-path",
+        "/home/user/tsumugi/tsumugi",
+        "-all-pkgs",
+        "/home/user/tsumugi/_build/js/debug/check/all_pkgs.json"
+      ],
+      "supported-targets": [
+        "Wasm",
+        "WasmGC",
+        "Js",
+        "Native",
+        "LLVM"
+      ]
+    },
+    {
+      "is-main": false,
+      "is-third-party": false,
+      "root-path": "/home/user/tsumugi/tsumugi/algos/fft",
+      "root": "lumen/tsumugi",
+      "rel": "algos/fft",
+      "files": {
+        "/home/user/tsumugi/tsumugi/algos/fft/convolve.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        },
+        "/home/user/tsumugi/tsumugi/algos/fft/fft.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        },
+        "/home/user/tsumugi/tsumugi/algos/fft/spectral.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        },
+        "/home/user/tsumugi/tsumugi/algos/fft/window.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        }
+      },
+      "wbtest-files": {},
+      "test-files": {
+        "/home/user/tsumugi/tsumugi/algos/fft/fft_bench_test.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        },
+        "/home/user/tsumugi/tsumugi/algos/fft/fft_test.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        }
+      },
+      "mbt-md-files": {},
+      "deps": [
+        {
+          "path": "lumen/tsumugi/core/math",
+          "alias": "tm",
+          "fspath": "/home/user/tsumugi/tsumugi/core/math"
+        },
+        {
+          "path": "moonbitlang/core/debug",
+          "alias": "debug",
+          "fspath": "/home/user/.moon/lib/core/debug"
+        },
+        {
+          "path": "moonbitlang/core/math",
+          "alias": "cmath",
+          "fspath": "/home/user/.moon/lib/core/math"
+        },
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "wbtest-deps": [
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "test-deps": [
+        {
+          "path": "moonbitlang/core/bench",
+          "alias": "bench",
+          "fspath": "/home/user/.moon/lib/core/bench"
+        },
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "artifact": "/home/user/tsumugi/_build/js/debug/check/algos/fft/fft.mi",
+      "check-command": [
+        "check",
+        "-error-format",
+        "json",
+        "/home/user/tsumugi/tsumugi/algos/fft/convolve.mbt",
+        "/home/user/tsumugi/tsumugi/algos/fft/fft.mbt",
+        "/home/user/tsumugi/tsumugi/algos/fft/spectral.mbt",
+        "/home/user/tsumugi/tsumugi/algos/fft/window.mbt",
+        "-o",
+        "/home/user/tsumugi/_build/js/debug/check/algos/fft/fft.mi",
+        "-pkg",
+        "lumen/tsumugi/algos/fft",
+        "-pkg-type",
+        "library",
+        "-std-path",
+        "/home/user/.moon/lib/core/_build/js/release/bundle",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/math/math.mi:cmath",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/debug/debug.mi:debug",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/prelude/prelude.mi:prelude",
+        "-i",
+        "/home/user/tsumugi/_build/js/debug/check/core/math/math.mi:tm",
+        "-pkg-sources",
+        "lumen/tsumugi/algos/fft:/home/user/tsumugi/tsumugi/algos/fft",
+        "-target",
+        "js",
+        "-workspace-path",
+        "/home/user/tsumugi/tsumugi",
+        "-all-pkgs",
+        "/home/user/tsumugi/_build/js/debug/check/all_pkgs.json"
+      ],
+      "wbtest-check-command": null,
+      "test-check-command": [
+        "check",
+        "-error-format",
+        "json",
+        "/home/user/tsumugi/tsumugi/algos/fft/fft_bench_test.mbt",
+        "/home/user/tsumugi/tsumugi/algos/fft/fft_test.mbt",
+        "-doctest-only",
+        "/home/user/tsumugi/tsumugi/algos/fft/convolve.mbt",
+        "-doctest-only",
+        "/home/user/tsumugi/tsumugi/algos/fft/fft.mbt",
+        "-doctest-only",
+        "/home/user/tsumugi/tsumugi/algos/fft/spectral.mbt",
+        "-doctest-only",
+        "/home/user/tsumugi/tsumugi/algos/fft/window.mbt",
+        "-include-doctests",
+        "-o",
+        "/home/user/tsumugi/_build/js/debug/check/algos/fft/fft.blackbox_test.mi",
+        "-pkg",
+        "lumen/tsumugi/algos/fft_blackbox_test",
+        "-pkg-type",
+        "library",
+        "-std-path",
+        "/home/user/.moon/lib/core/_build/js/release/bundle",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/bench/bench.mi:bench",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/math/math.mi:cmath",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/debug/debug.mi:debug",
+        "-i",
+        "/home/user/tsumugi/_build/js/debug/check/algos/fft/fft.mi:fft",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/prelude/prelude.mi:prelude",
+        "-i",
+        "/home/user/tsumugi/_build/js/debug/check/core/math/math.mi:tm",
+        "-pkg-sources",
+        "lumen/tsumugi/algos/fft_blackbox_test:/home/user/tsumugi/tsumugi/algos/fft",
+        "-target",
+        "js",
+        "-blackbox-test",
+        "-workspace-path",
+        "/home/user/tsumugi/tsumugi",
+        "-all-pkgs",
+        "/home/user/tsumugi/_build/js/debug/check/all_pkgs.json"
+      ],
+      "supported-targets": [
+        "Wasm",
+        "WasmGC",
+        "Js",
+        "Native",
+        "LLVM"
+      ]
+    },
+    {
+      "is-main": false,
+      "is-third-party": false,
+      "root-path": "/home/user/tsumugi/tsumugi/algos/lin",
+      "root": "lumen/tsumugi",
+      "rel": "algos/lin",
+      "files": {
+        "/home/user/tsumugi/tsumugi/algos/lin/lin.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        }
+      },
+      "wbtest-files": {},
+      "test-files": {
+        "/home/user/tsumugi/tsumugi/algos/lin/lin_bench_test.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        },
+        "/home/user/tsumugi/tsumugi/algos/lin/lin_test.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        }
+      },
+      "mbt-md-files": {},
+      "deps": [
+        {
+          "path": "lumen/tsumugi/algos/fft",
+          "alias": "fft",
+          "fspath": "/home/user/tsumugi/tsumugi/algos/fft"
+        },
+        {
+          "path": "moonbitlang/core/math",
+          "alias": "cmath",
+          "fspath": "/home/user/.moon/lib/core/math"
+        },
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "wbtest-deps": [
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "test-deps": [
+        {
+          "path": "moonbitlang/core/bench",
+          "alias": "bench",
+          "fspath": "/home/user/.moon/lib/core/bench"
+        },
+        {
+          "path": "moonbitlang/core/math",
+          "alias": "cmath",
+          "fspath": "/home/user/.moon/lib/core/math"
+        },
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "artifact": "/home/user/tsumugi/_build/js/debug/check/algos/lin/lin.mi",
+      "check-command": [
+        "check",
+        "-error-format",
+        "json",
+        "/home/user/tsumugi/tsumugi/algos/lin/lin.mbt",
+        "-o",
+        "/home/user/tsumugi/_build/js/debug/check/algos/lin/lin.mi",
+        "-pkg",
+        "lumen/tsumugi/algos/lin",
+        "-pkg-type",
+        "library",
+        "-std-path",
+        "/home/user/.moon/lib/core/_build/js/release/bundle",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/math/math.mi:cmath",
+        "-i",
+        "/home/user/tsumugi/_build/js/debug/check/algos/fft/fft.mi:fft",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/prelude/prelude.mi:prelude",
+        "-pkg-sources",
+        "lumen/tsumugi/algos/lin:/home/user/tsumugi/tsumugi/algos/lin",
+        "-target",
+        "js",
+        "-workspace-path",
+        "/home/user/tsumugi/tsumugi",
+        "-all-pkgs",
+        "/home/user/tsumugi/_build/js/debug/check/all_pkgs.json"
+      ],
+      "wbtest-check-command": null,
+      "test-check-command": [
+        "check",
+        "-error-format",
+        "json",
+        "/home/user/tsumugi/tsumugi/algos/lin/lin_bench_test.mbt",
+        "/home/user/tsumugi/tsumugi/algos/lin/lin_test.mbt",
+        "-doctest-only",
+        "/home/user/tsumugi/tsumugi/algos/lin/lin.mbt",
+        "-include-doctests",
+        "-o",
+        "/home/user/tsumugi/_build/js/debug/check/algos/lin/lin.blackbox_test.mi",
+        "-pkg",
+        "lumen/tsumugi/algos/lin_blackbox_test",
+        "-pkg-type",
+        "library",
+        "-std-path",
+        "/home/user/.moon/lib/core/_build/js/release/bundle",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/bench/bench.mi:bench",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/math/math.mi:cmath",
+        "-i",
+        "/home/user/tsumugi/_build/js/debug/check/algos/fft/fft.mi:fft",
+        "-i",
+        "/home/user/tsumugi/_build/js/debug/check/algos/lin/lin.mi:lin",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/prelude/prelude.mi:prelude",
+        "-pkg-sources",
+        "lumen/tsumugi/algos/lin_blackbox_test:/home/user/tsumugi/tsumugi/algos/lin",
+        "-target",
+        "js",
+        "-blackbox-test",
+        "-workspace-path",
+        "/home/user/tsumugi/tsumugi",
+        "-all-pkgs",
+        "/home/user/tsumugi/_build/js/debug/check/all_pkgs.json"
+      ],
+      "supported-targets": [
+        "Wasm",
+        "WasmGC",
+        "Js",
+        "Native",
+        "LLVM"
+      ]
+    },
+    {
+      "is-main": false,
+      "is-third-party": false,
+      "root-path": "/home/user/tsumugi/tsumugi/algos/smooth",
+      "root": "lumen/tsumugi",
+      "rel": "algos/smooth",
+      "files": {
+        "/home/user/tsumugi/tsumugi/algos/smooth/smooth.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        }
+      },
+      "wbtest-files": {},
+      "test-files": {
+        "/home/user/tsumugi/tsumugi/algos/smooth/smooth_bench_test.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        },
+        "/home/user/tsumugi/tsumugi/algos/smooth/smooth_test.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        }
+      },
+      "mbt-md-files": {},
+      "deps": [
+        {
+          "path": "moonbitlang/core/math",
+          "alias": "cmath",
+          "fspath": "/home/user/.moon/lib/core/math"
+        },
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "wbtest-deps": [
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "test-deps": [
+        {
+          "path": "moonbitlang/core/bench",
+          "alias": "bench",
+          "fspath": "/home/user/.moon/lib/core/bench"
+        },
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "artifact": "/home/user/tsumugi/_build/js/debug/check/algos/smooth/smooth.mi",
+      "check-command": [
+        "check",
+        "-error-format",
+        "json",
+        "/home/user/tsumugi/tsumugi/algos/smooth/smooth.mbt",
+        "-o",
+        "/home/user/tsumugi/_build/js/debug/check/algos/smooth/smooth.mi",
+        "-pkg",
+        "lumen/tsumugi/algos/smooth",
+        "-pkg-type",
+        "library",
+        "-std-path",
+        "/home/user/.moon/lib/core/_build/js/release/bundle",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/math/math.mi:cmath",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/prelude/prelude.mi:prelude",
+        "-pkg-sources",
+        "lumen/tsumugi/algos/smooth:/home/user/tsumugi/tsumugi/algos/smooth",
+        "-target",
+        "js",
+        "-workspace-path",
+        "/home/user/tsumugi/tsumugi",
+        "-all-pkgs",
+        "/home/user/tsumugi/_build/js/debug/check/all_pkgs.json"
+      ],
+      "wbtest-check-command": null,
+      "test-check-command": [
+        "check",
+        "-error-format",
+        "json",
+        "/home/user/tsumugi/tsumugi/algos/smooth/smooth_bench_test.mbt",
+        "/home/user/tsumugi/tsumugi/algos/smooth/smooth_test.mbt",
+        "-doctest-only",
+        "/home/user/tsumugi/tsumugi/algos/smooth/smooth.mbt",
+        "-include-doctests",
+        "-o",
+        "/home/user/tsumugi/_build/js/debug/check/algos/smooth/smooth.blackbox_test.mi",
+        "-pkg",
+        "lumen/tsumugi/algos/smooth_blackbox_test",
+        "-pkg-type",
+        "library",
+        "-std-path",
+        "/home/user/.moon/lib/core/_build/js/release/bundle",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/bench/bench.mi:bench",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/math/math.mi:cmath",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/prelude/prelude.mi:prelude",
+        "-i",
+        "/home/user/tsumugi/_build/js/debug/check/algos/smooth/smooth.mi:smooth",
+        "-pkg-sources",
+        "lumen/tsumugi/algos/smooth_blackbox_test:/home/user/tsumugi/tsumugi/algos/smooth",
+        "-target",
+        "js",
+        "-blackbox-test",
+        "-workspace-path",
+        "/home/user/tsumugi/tsumugi",
+        "-all-pkgs",
+        "/home/user/tsumugi/_build/js/debug/check/all_pkgs.json"
+      ],
+      "supported-targets": [
+        "Wasm",
+        "WasmGC",
+        "Js",
+        "Native",
+        "LLVM"
+      ]
+    },
+    {
+      "is-main": false,
+      "is-third-party": false,
+      "root-path": "/home/user/tsumugi/tsumugi/algos/spatial",
+      "root": "lumen/tsumugi",
+      "rel": "algos/spatial",
+      "files": {
+        "/home/user/tsumugi/tsumugi/algos/spatial/aabb.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        },
+        "/home/user/tsumugi/tsumugi/algos/spatial/bvh.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        },
+        "/home/user/tsumugi/tsumugi/algos/spatial/grid.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        },
+        "/home/user/tsumugi/tsumugi/algos/spatial/morton.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        },
+        "/home/user/tsumugi/tsumugi/algos/spatial/sap.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        }
+      },
+      "wbtest-files": {},
+      "test-files": {
+        "/home/user/tsumugi/tsumugi/algos/spatial/spatial_bench_test.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        },
+        "/home/user/tsumugi/tsumugi/algos/spatial/spatial_test.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        }
+      },
+      "mbt-md-files": {},
+      "deps": [
+        {
+          "path": "moonbitlang/core/debug",
+          "alias": "debug",
+          "fspath": "/home/user/.moon/lib/core/debug"
+        },
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "wbtest-deps": [
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "test-deps": [
+        {
+          "path": "moonbitlang/core/bench",
+          "alias": "bench",
+          "fspath": "/home/user/.moon/lib/core/bench"
+        },
+        {
+          "path": "moonbitlang/core/math",
+          "alias": "cmath",
+          "fspath": "/home/user/.moon/lib/core/math"
+        },
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "artifact": "/home/user/tsumugi/_build/js/debug/check/algos/spatial/spatial.mi",
+      "check-command": [
+        "check",
+        "-error-format",
+        "json",
+        "/home/user/tsumugi/tsumugi/algos/spatial/aabb.mbt",
+        "/home/user/tsumugi/tsumugi/algos/spatial/bvh.mbt",
+        "/home/user/tsumugi/tsumugi/algos/spatial/grid.mbt",
+        "/home/user/tsumugi/tsumugi/algos/spatial/morton.mbt",
+        "/home/user/tsumugi/tsumugi/algos/spatial/sap.mbt",
+        "-o",
+        "/home/user/tsumugi/_build/js/debug/check/algos/spatial/spatial.mi",
+        "-pkg",
+        "lumen/tsumugi/algos/spatial",
+        "-pkg-type",
+        "library",
+        "-std-path",
+        "/home/user/.moon/lib/core/_build/js/release/bundle",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/debug/debug.mi:debug",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/prelude/prelude.mi:prelude",
+        "-pkg-sources",
+        "lumen/tsumugi/algos/spatial:/home/user/tsumugi/tsumugi/algos/spatial",
+        "-target",
+        "js",
+        "-workspace-path",
+        "/home/user/tsumugi/tsumugi",
+        "-all-pkgs",
+        "/home/user/tsumugi/_build/js/debug/check/all_pkgs.json"
+      ],
+      "wbtest-check-command": null,
+      "test-check-command": [
+        "check",
+        "-error-format",
+        "json",
+        "/home/user/tsumugi/tsumugi/algos/spatial/spatial_bench_test.mbt",
+        "/home/user/tsumugi/tsumugi/algos/spatial/spatial_test.mbt",
+        "-doctest-only",
+        "/home/user/tsumugi/tsumugi/algos/spatial/aabb.mbt",
+        "-doctest-only",
+        "/home/user/tsumugi/tsumugi/algos/spatial/bvh.mbt",
+        "-doctest-only",
+        "/home/user/tsumugi/tsumugi/algos/spatial/grid.mbt",
+        "-doctest-only",
+        "/home/user/tsumugi/tsumugi/algos/spatial/morton.mbt",
+        "-doctest-only",
+        "/home/user/tsumugi/tsumugi/algos/spatial/sap.mbt",
+        "-include-doctests",
+        "-o",
+        "/home/user/tsumugi/_build/js/debug/check/algos/spatial/spatial.blackbox_test.mi",
+        "-pkg",
+        "lumen/tsumugi/algos/spatial_blackbox_test",
+        "-pkg-type",
+        "library",
+        "-std-path",
+        "/home/user/.moon/lib/core/_build/js/release/bundle",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/bench/bench.mi:bench",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/math/math.mi:cmath",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/debug/debug.mi:debug",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/prelude/prelude.mi:prelude",
+        "-i",
+        "/home/user/tsumugi/_build/js/debug/check/algos/spatial/spatial.mi:spatial",
+        "-pkg-sources",
+        "lumen/tsumugi/algos/spatial_blackbox_test:/home/user/tsumugi/tsumugi/algos/spatial",
+        "-target",
+        "js",
+        "-blackbox-test",
+        "-workspace-path",
+        "/home/user/tsumugi/tsumugi",
+        "-all-pkgs",
+        "/home/user/tsumugi/_build/js/debug/check/all_pkgs.json"
+      ],
+      "supported-targets": [
+        "Wasm",
+        "WasmGC",
+        "Js",
+        "Native",
+        "LLVM"
+      ]
+    },
+    {
+      "is-main": false,
+      "is-third-party": false,
+      "root-path": "/home/user/tsumugi/tsumugi/algos/stats",
+      "root": "lumen/tsumugi",
+      "rel": "algos/stats",
+      "files": {
+        "/home/user/tsumugi/tsumugi/algos/stats/stats.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        }
+      },
+      "wbtest-files": {},
+      "test-files": {
+        "/home/user/tsumugi/tsumugi/algos/stats/stats_bench_test.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        },
+        "/home/user/tsumugi/tsumugi/algos/stats/stats_test.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        }
+      },
+      "mbt-md-files": {},
+      "deps": [
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "wbtest-deps": [
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "test-deps": [
+        {
+          "path": "moonbitlang/core/bench",
+          "alias": "bench",
+          "fspath": "/home/user/.moon/lib/core/bench"
+        },
+        {
+          "path": "moonbitlang/core/math",
+          "alias": "cmath",
+          "fspath": "/home/user/.moon/lib/core/math"
+        },
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "artifact": "/home/user/tsumugi/_build/js/debug/check/algos/stats/stats.mi",
+      "check-command": [
+        "check",
+        "-error-format",
+        "json",
+        "/home/user/tsumugi/tsumugi/algos/stats/stats.mbt",
+        "-o",
+        "/home/user/tsumugi/_build/js/debug/check/algos/stats/stats.mi",
+        "-pkg",
+        "lumen/tsumugi/algos/stats",
+        "-pkg-type",
+        "library",
+        "-std-path",
+        "/home/user/.moon/lib/core/_build/js/release/bundle",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/prelude/prelude.mi:prelude",
+        "-pkg-sources",
+        "lumen/tsumugi/algos/stats:/home/user/tsumugi/tsumugi/algos/stats",
+        "-target",
+        "js",
+        "-workspace-path",
+        "/home/user/tsumugi/tsumugi",
+        "-all-pkgs",
+        "/home/user/tsumugi/_build/js/debug/check/all_pkgs.json"
+      ],
+      "wbtest-check-command": null,
+      "test-check-command": [
+        "check",
+        "-error-format",
+        "json",
+        "/home/user/tsumugi/tsumugi/algos/stats/stats_bench_test.mbt",
+        "/home/user/tsumugi/tsumugi/algos/stats/stats_test.mbt",
+        "-doctest-only",
+        "/home/user/tsumugi/tsumugi/algos/stats/stats.mbt",
+        "-include-doctests",
+        "-o",
+        "/home/user/tsumugi/_build/js/debug/check/algos/stats/stats.blackbox_test.mi",
+        "-pkg",
+        "lumen/tsumugi/algos/stats_blackbox_test",
+        "-pkg-type",
+        "library",
+        "-std-path",
+        "/home/user/.moon/lib/core/_build/js/release/bundle",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/bench/bench.mi:bench",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/math/math.mi:cmath",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/prelude/prelude.mi:prelude",
+        "-i",
+        "/home/user/tsumugi/_build/js/debug/check/algos/stats/stats.mi:stats",
+        "-pkg-sources",
+        "lumen/tsumugi/algos/stats_blackbox_test:/home/user/tsumugi/tsumugi/algos/stats",
+        "-target",
+        "js",
+        "-blackbox-test",
+        "-workspace-path",
+        "/home/user/tsumugi/tsumugi",
+        "-all-pkgs",
+        "/home/user/tsumugi/_build/js/debug/check/all_pkgs.json"
+      ],
+      "supported-targets": [
+        "Wasm",
+        "WasmGC",
+        "Js",
+        "Native",
+        "LLVM"
+      ]
+    },
+    {
+      "is-main": false,
+      "is-third-party": false,
+      "root-path": "/home/user/tsumugi/tsumugi/core/base",
+      "root": "lumen/tsumugi",
+      "rel": "core/base",
+      "files": {
+        "/home/user/tsumugi/tsumugi/core/base/arena.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        },
+        "/home/user/tsumugi/tsumugi/core/base/bits.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        },
+        "/home/user/tsumugi/tsumugi/core/base/color.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        },
+        "/home/user/tsumugi/tsumugi/core/base/hash.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        },
+        "/home/user/tsumugi/tsumugi/core/base/intern.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        }
+      },
+      "wbtest-files": {},
+      "test-files": {
+        "/home/user/tsumugi/tsumugi/core/base/base_bench_test.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        },
+        "/home/user/tsumugi/tsumugi/core/base/base_test.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        }
+      },
+      "mbt-md-files": {},
+      "deps": [
+        {
+          "path": "lumen/tsumugi/core/math",
+          "alias": "tm",
+          "fspath": "/home/user/tsumugi/tsumugi/core/math"
+        },
+        {
+          "path": "moonbitlang/core/debug",
+          "alias": "debug",
+          "fspath": "/home/user/.moon/lib/core/debug"
+        },
+        {
+          "path": "moonbitlang/core/encoding/utf8",
+          "alias": "utf8",
+          "fspath": "/home/user/.moon/lib/core/encoding/utf8"
+        },
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "wbtest-deps": [
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "test-deps": [
+        {
+          "path": "moonbitlang/core/bench",
+          "alias": "bench",
+          "fspath": "/home/user/.moon/lib/core/bench"
+        },
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "artifact": "/home/user/tsumugi/_build/js/debug/check/core/base/base.mi",
+      "check-command": [
+        "check",
+        "-error-format",
+        "json",
+        "/home/user/tsumugi/tsumugi/core/base/arena.mbt",
+        "/home/user/tsumugi/tsumugi/core/base/bits.mbt",
+        "/home/user/tsumugi/tsumugi/core/base/color.mbt",
+        "/home/user/tsumugi/tsumugi/core/base/hash.mbt",
+        "/home/user/tsumugi/tsumugi/core/base/intern.mbt",
+        "-o",
+        "/home/user/tsumugi/_build/js/debug/check/core/base/base.mi",
+        "-pkg",
+        "lumen/tsumugi/core/base",
+        "-pkg-type",
+        "library",
+        "-std-path",
+        "/home/user/.moon/lib/core/_build/js/release/bundle",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/debug/debug.mi:debug",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/prelude/prelude.mi:prelude",
+        "-i",
+        "/home/user/tsumugi/_build/js/debug/check/core/math/math.mi:tm",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/encoding/utf8/utf8.mi:utf8",
+        "-pkg-sources",
+        "lumen/tsumugi/core/base:/home/user/tsumugi/tsumugi/core/base",
+        "-target",
+        "js",
+        "-workspace-path",
+        "/home/user/tsumugi/tsumugi",
+        "-all-pkgs",
+        "/home/user/tsumugi/_build/js/debug/check/all_pkgs.json"
+      ],
+      "wbtest-check-command": null,
+      "test-check-command": [
+        "check",
+        "-error-format",
+        "json",
+        "/home/user/tsumugi/tsumugi/core/base/base_bench_test.mbt",
+        "/home/user/tsumugi/tsumugi/core/base/base_test.mbt",
+        "-doctest-only",
+        "/home/user/tsumugi/tsumugi/core/base/arena.mbt",
+        "-doctest-only",
+        "/home/user/tsumugi/tsumugi/core/base/bits.mbt",
+        "-doctest-only",
+        "/home/user/tsumugi/tsumugi/core/base/color.mbt",
+        "-doctest-only",
+        "/home/user/tsumugi/tsumugi/core/base/hash.mbt",
+        "-doctest-only",
+        "/home/user/tsumugi/tsumugi/core/base/intern.mbt",
+        "-include-doctests",
+        "-o",
+        "/home/user/tsumugi/_build/js/debug/check/core/base/base.blackbox_test.mi",
+        "-pkg",
+        "lumen/tsumugi/core/base_blackbox_test",
+        "-pkg-type",
+        "library",
+        "-std-path",
+        "/home/user/.moon/lib/core/_build/js/release/bundle",
+        "-i",
+        "/home/user/tsumugi/_build/js/debug/check/core/base/base.mi:base",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/bench/bench.mi:bench",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/debug/debug.mi:debug",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/prelude/prelude.mi:prelude",
+        "-i",
+        "/home/user/tsumugi/_build/js/debug/check/core/math/math.mi:tm",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/encoding/utf8/utf8.mi:utf8",
+        "-pkg-sources",
+        "lumen/tsumugi/core/base_blackbox_test:/home/user/tsumugi/tsumugi/core/base",
+        "-target",
+        "js",
+        "-blackbox-test",
+        "-workspace-path",
+        "/home/user/tsumugi/tsumugi",
+        "-all-pkgs",
+        "/home/user/tsumugi/_build/js/debug/check/all_pkgs.json"
+      ],
+      "supported-targets": [
+        "Wasm",
+        "WasmGC",
+        "Js",
+        "Native",
+        "LLVM"
+      ]
+    },
+    {
+      "is-main": false,
+      "is-third-party": false,
+      "root-path": "/home/user/tsumugi/tsumugi/core/math",
+      "root": "lumen/tsumugi",
+      "rel": "core/math",
+      "files": {
+        "/home/user/tsumugi/tsumugi/core/math/bezier.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        },
+        "/home/user/tsumugi/tsumugi/core/math/mat.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        },
+        "/home/user/tsumugi/tsumugi/core/math/scalar.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        },
+        "/home/user/tsumugi/tsumugi/core/math/trig.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        },
+        "/home/user/tsumugi/tsumugi/core/math/vec.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        }
+      },
+      "wbtest-files": {},
+      "test-files": {
+        "/home/user/tsumugi/tsumugi/core/math/math_bench_test.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        },
+        "/home/user/tsumugi/tsumugi/core/math/math_test.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        }
+      },
+      "mbt-md-files": {},
+      "deps": [
+        {
+          "path": "moonbitlang/core/debug",
+          "alias": "debug",
+          "fspath": "/home/user/.moon/lib/core/debug"
+        },
+        {
+          "path": "moonbitlang/core/math",
+          "alias": "cmath",
+          "fspath": "/home/user/.moon/lib/core/math"
+        },
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "wbtest-deps": [
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "test-deps": [
+        {
+          "path": "moonbitlang/core/bench",
+          "alias": "bench",
+          "fspath": "/home/user/.moon/lib/core/bench"
+        },
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "artifact": "/home/user/tsumugi/_build/js/debug/check/core/math/math.mi",
+      "check-command": [
+        "check",
+        "-error-format",
+        "json",
+        "/home/user/tsumugi/tsumugi/core/math/bezier.mbt",
+        "/home/user/tsumugi/tsumugi/core/math/mat.mbt",
+        "/home/user/tsumugi/tsumugi/core/math/scalar.mbt",
+        "/home/user/tsumugi/tsumugi/core/math/trig.mbt",
+        "/home/user/tsumugi/tsumugi/core/math/vec.mbt",
+        "-o",
+        "/home/user/tsumugi/_build/js/debug/check/core/math/math.mi",
+        "-pkg",
+        "lumen/tsumugi/core/math",
+        "-pkg-type",
+        "library",
+        "-std-path",
+        "/home/user/.moon/lib/core/_build/js/release/bundle",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/math/math.mi:cmath",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/debug/debug.mi:debug",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/prelude/prelude.mi:prelude",
+        "-pkg-sources",
+        "lumen/tsumugi/core/math:/home/user/tsumugi/tsumugi/core/math",
+        "-target",
+        "js",
+        "-workspace-path",
+        "/home/user/tsumugi/tsumugi",
+        "-all-pkgs",
+        "/home/user/tsumugi/_build/js/debug/check/all_pkgs.json"
+      ],
+      "wbtest-check-command": null,
+      "test-check-command": [
+        "check",
+        "-error-format",
+        "json",
+        "/home/user/tsumugi/tsumugi/core/math/math_bench_test.mbt",
+        "/home/user/tsumugi/tsumugi/core/math/math_test.mbt",
+        "-doctest-only",
+        "/home/user/tsumugi/tsumugi/core/math/bezier.mbt",
+        "-doctest-only",
+        "/home/user/tsumugi/tsumugi/core/math/mat.mbt",
+        "-doctest-only",
+        "/home/user/tsumugi/tsumugi/core/math/scalar.mbt",
+        "-doctest-only",
+        "/home/user/tsumugi/tsumugi/core/math/trig.mbt",
+        "-doctest-only",
+        "/home/user/tsumugi/tsumugi/core/math/vec.mbt",
+        "-include-doctests",
+        "-o",
+        "/home/user/tsumugi/_build/js/debug/check/core/math/math.blackbox_test.mi",
+        "-pkg",
+        "lumen/tsumugi/core/math_blackbox_test",
+        "-pkg-type",
+        "library",
+        "-std-path",
+        "/home/user/.moon/lib/core/_build/js/release/bundle",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/bench/bench.mi:bench",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/math/math.mi:cmath",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/debug/debug.mi:debug",
+        "-i",
+        "/home/user/tsumugi/_build/js/debug/check/core/math/math.mi:math",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/prelude/prelude.mi:prelude",
+        "-pkg-sources",
+        "lumen/tsumugi/core/math_blackbox_test:/home/user/tsumugi/tsumugi/core/math",
+        "-target",
+        "js",
+        "-blackbox-test",
+        "-workspace-path",
+        "/home/user/tsumugi/tsumugi",
+        "-all-pkgs",
+        "/home/user/tsumugi/_build/js/debug/check/all_pkgs.json"
+      ],
+      "supported-targets": [
+        "Wasm",
+        "WasmGC",
+        "Js",
+        "Native",
+        "LLVM"
+      ]
+    },
+    {
+      "is-main": false,
+      "is-third-party": false,
+      "root-path": "/home/user/tsumugi/tsumugi/core/num",
+      "root": "lumen/tsumugi",
+      "rel": "core/num",
+      "files": {
+        "/home/user/tsumugi/tsumugi/core/num/fx.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        },
+        "/home/user/tsumugi/tsumugi/core/num/rng.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        },
+        "/home/user/tsumugi/tsumugi/core/num/trig_fx.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        }
+      },
+      "wbtest-files": {},
+      "test-files": {
+        "/home/user/tsumugi/tsumugi/core/num/num_bench_test.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        },
+        "/home/user/tsumugi/tsumugi/core/num/num_test.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        }
+      },
+      "mbt-md-files": {},
+      "deps": [
+        {
+          "path": "lumen/tsumugi/core/math",
+          "alias": "tm",
+          "fspath": "/home/user/tsumugi/tsumugi/core/math"
+        },
+        {
+          "path": "moonbitlang/core/debug",
+          "alias": "debug",
+          "fspath": "/home/user/.moon/lib/core/debug"
+        },
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "wbtest-deps": [
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "test-deps": [
+        {
+          "path": "lumen/tsumugi/core/math",
+          "alias": "tm",
+          "fspath": "/home/user/tsumugi/tsumugi/core/math"
+        },
+        {
+          "path": "moonbitlang/core/bench",
+          "alias": "bench",
+          "fspath": "/home/user/.moon/lib/core/bench"
+        },
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "artifact": "/home/user/tsumugi/_build/js/debug/check/core/num/num.mi",
+      "check-command": [
+        "check",
+        "-error-format",
+        "json",
+        "/home/user/tsumugi/tsumugi/core/num/fx.mbt",
+        "/home/user/tsumugi/tsumugi/core/num/rng.mbt",
+        "/home/user/tsumugi/tsumugi/core/num/trig_fx.mbt",
+        "-o",
+        "/home/user/tsumugi/_build/js/debug/check/core/num/num.mi",
+        "-pkg",
+        "lumen/tsumugi/core/num",
+        "-pkg-type",
+        "library",
+        "-std-path",
+        "/home/user/.moon/lib/core/_build/js/release/bundle",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/debug/debug.mi:debug",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/prelude/prelude.mi:prelude",
+        "-i",
+        "/home/user/tsumugi/_build/js/debug/check/core/math/math.mi:tm",
+        "-pkg-sources",
+        "lumen/tsumugi/core/num:/home/user/tsumugi/tsumugi/core/num",
+        "-target",
+        "js",
+        "-workspace-path",
+        "/home/user/tsumugi/tsumugi",
+        "-all-pkgs",
+        "/home/user/tsumugi/_build/js/debug/check/all_pkgs.json"
+      ],
+      "wbtest-check-command": null,
+      "test-check-command": [
+        "check",
+        "-error-format",
+        "json",
+        "/home/user/tsumugi/tsumugi/core/num/num_bench_test.mbt",
+        "/home/user/tsumugi/tsumugi/core/num/num_test.mbt",
+        "-doctest-only",
+        "/home/user/tsumugi/tsumugi/core/num/fx.mbt",
+        "-doctest-only",
+        "/home/user/tsumugi/tsumugi/core/num/rng.mbt",
+        "-doctest-only",
+        "/home/user/tsumugi/tsumugi/core/num/trig_fx.mbt",
+        "-include-doctests",
+        "-o",
+        "/home/user/tsumugi/_build/js/debug/check/core/num/num.blackbox_test.mi",
+        "-pkg",
+        "lumen/tsumugi/core/num_blackbox_test",
+        "-pkg-type",
+        "library",
+        "-std-path",
+        "/home/user/.moon/lib/core/_build/js/release/bundle",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/bench/bench.mi:bench",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/debug/debug.mi:debug",
+        "-i",
+        "/home/user/tsumugi/_build/js/debug/check/core/num/num.mi:num",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/prelude/prelude.mi:prelude",
+        "-i",
+        "/home/user/tsumugi/_build/js/debug/check/core/math/math.mi:tm",
+        "-pkg-sources",
+        "lumen/tsumugi/core/num_blackbox_test:/home/user/tsumugi/tsumugi/core/num",
+        "-target",
+        "js",
+        "-blackbox-test",
+        "-workspace-path",
+        "/home/user/tsumugi/tsumugi",
+        "-all-pkgs",
+        "/home/user/tsumugi/_build/js/debug/check/all_pkgs.json"
+      ],
+      "supported-targets": [
+        "Wasm",
+        "WasmGC",
+        "Js",
+        "Native",
+        "LLVM"
+      ]
+    },
+    {
+      "is-main": false,
+      "is-third-party": false,
+      "root-path": "/home/user/tsumugi/tsumugi/reactive/signal",
+      "root": "lumen/tsumugi",
+      "rel": "reactive/signal",
+      "files": {
+        "/home/user/tsumugi/tsumugi/reactive/signal/binding.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        },
+        "/home/user/tsumugi/tsumugi/reactive/signal/graph.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        }
+      },
+      "wbtest-files": {},
+      "test-files": {
+        "/home/user/tsumugi/tsumugi/reactive/signal/signal_bench_test.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        },
+        "/home/user/tsumugi/tsumugi/reactive/signal/signal_test.mbt": {
+          "backend": [
+            "Wasm",
+            "WasmGC",
+            "Js",
+            "Native",
+            "LLVM"
+          ],
+          "optlevel": [
+            "Release",
+            "Debug"
+          ]
+        }
+      },
+      "mbt-md-files": {},
+      "deps": [
+        {
+          "path": "moonbitlang/core/debug",
+          "alias": "debug",
+          "fspath": "/home/user/.moon/lib/core/debug"
+        },
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "wbtest-deps": [
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "test-deps": [
+        {
+          "path": "lumen/tsumugi/core/base",
+          "alias": "base",
+          "fspath": "/home/user/tsumugi/tsumugi/core/base"
+        },
+        {
+          "path": "moonbitlang/core/bench",
+          "alias": "bench",
+          "fspath": "/home/user/.moon/lib/core/bench"
+        },
+        {
+          "path": "moonbitlang/core/debug",
+          "alias": "debug",
+          "fspath": "/home/user/.moon/lib/core/debug"
+        },
+        {
+          "path": "moonbitlang/core/prelude",
+          "alias": "prelude",
+          "fspath": "/home/user/.moon/lib/core/prelude"
+        }
+      ],
+      "artifact": "/home/user/tsumugi/_build/js/debug/check/reactive/signal/signal.mi",
+      "check-command": [
+        "check",
+        "-error-format",
+        "json",
+        "/home/user/tsumugi/tsumugi/reactive/signal/binding.mbt",
+        "/home/user/tsumugi/tsumugi/reactive/signal/graph.mbt",
+        "-o",
+        "/home/user/tsumugi/_build/js/debug/check/reactive/signal/signal.mi",
+        "-pkg",
+        "lumen/tsumugi/reactive/signal",
+        "-pkg-type",
+        "library",
+        "-std-path",
+        "/home/user/.moon/lib/core/_build/js/release/bundle",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/debug/debug.mi:debug",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/prelude/prelude.mi:prelude",
+        "-pkg-sources",
+        "lumen/tsumugi/reactive/signal:/home/user/tsumugi/tsumugi/reactive/signal",
+        "-target",
+        "js",
+        "-workspace-path",
+        "/home/user/tsumugi/tsumugi",
+        "-all-pkgs",
+        "/home/user/tsumugi/_build/js/debug/check/all_pkgs.json"
+      ],
+      "wbtest-check-command": null,
+      "test-check-command": [
+        "check",
+        "-error-format",
+        "json",
+        "/home/user/tsumugi/tsumugi/reactive/signal/signal_bench_test.mbt",
+        "/home/user/tsumugi/tsumugi/reactive/signal/signal_test.mbt",
+        "-doctest-only",
+        "/home/user/tsumugi/tsumugi/reactive/signal/binding.mbt",
+        "-doctest-only",
+        "/home/user/tsumugi/tsumugi/reactive/signal/graph.mbt",
+        "-include-doctests",
+        "-o",
+        "/home/user/tsumugi/_build/js/debug/check/reactive/signal/signal.blackbox_test.mi",
+        "-pkg",
+        "lumen/tsumugi/reactive/signal_blackbox_test",
+        "-pkg-type",
+        "library",
+        "-std-path",
+        "/home/user/.moon/lib/core/_build/js/release/bundle",
+        "-i",
+        "/home/user/tsumugi/_build/js/debug/check/core/base/base.mi:base",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/bench/bench.mi:bench",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/debug/debug.mi:debug",
+        "-i",
+        "/home/user/.moon/lib/core/_build/js/release/bundle/prelude/prelude.mi:prelude",
+        "-i",
+        "/home/user/tsumugi/_build/js/debug/check/reactive/signal/signal.mi:signal",
+        "-pkg-sources",
+        "lumen/tsumugi/reactive/signal_blackbox_test:/home/user/tsumugi/tsumugi/reactive/signal",
+        "-target",
+        "js",
+        "-blackbox-test",
+        "-workspace-path",
+        "/home/user/tsumugi/tsumugi",
+        "-all-pkgs",
+        "/home/user/tsumugi/_build/js/debug/check/all_pkgs.json"
+      ],
+      "supported-targets": [
+        "Wasm",
+        "WasmGC",
+        "Js",
+        "Native",
+        "LLVM"
+      ]
+    }
+  ],
+  "deps": [],
+  "backend": "js",
+  "opt_level": "debug",
+  "source": null
+}
