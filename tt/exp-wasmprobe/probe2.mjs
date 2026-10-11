@@ -1,0 +1,17 @@
+import fs from "node:fs";
+const bytes = fs.readFileSync("_build/wasm/release/build/app/app.wasm");
+const inst = new WebAssembly.Instance(new WebAssembly.Module(bytes), { spectest: { print_char: () => {} } });
+const mem = inst.exports.memory;
+console.log("exports:", Object.keys(inst.exports).join(", "));
+console.log("fill(10) ->", inst.exports.fill(10));
+const bp = inst.exports.scratch_byte_ptr();
+console.log("byte ptr =", bp);
+const u8 = new Uint8Array(mem.buffer, bp, 8);
+console.log("via ptr:", Array.from(u8));
+console.log("fill_d(1.5) ->", inst.exports.fill_d(1.5));
+const dp = inst.exports.scratch_double_ptr();
+const f64 = new Float64Array(mem.buffer, dp, 4);
+console.log("double ptr =", dp, "vals:", Array.from(f64));
+f64[0] = 99.5;
+inst.exports.fill_d(0.0);
+console.log("after js write + moonbit refill:", Array.from(new Float64Array(mem.buffer, dp, 4)));
